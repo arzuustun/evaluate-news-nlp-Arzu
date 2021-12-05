@@ -31,10 +31,12 @@ Your server index.js file must have these things:
 ```
 npm install
 ```
+```
 npm run build-prod
 ```
+```
 npm start
-
+```
 Open browser at http://localhost:8081/
 
 ## Test
