@@ -1,0 +1,33 @@
+$keycolor: rgb(211, 34, 93);
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+}
+p {
+    margin: 1rem auto;
+}
+
+a:link,
+a:visited {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font: 300 1rem "Roboto Slab", serif;
+
+}
+a:hover {
+    color: $keycolor;
+}
+strong{
+    color: $keycolor;
+}
