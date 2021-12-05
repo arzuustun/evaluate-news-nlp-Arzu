@@ -31,9 +31,10 @@ Your server index.js file must have these things:
 ```
 npm install
 ```
-- Run in production mode
 ```
 npm run build-prod
+```
+npm start
 ```
 
 Open browser at http://localhost:8081/
