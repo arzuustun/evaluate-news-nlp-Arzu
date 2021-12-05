@@ -16,56 +16,27 @@ The goal of this project is to practice:
 - Using NLP for interpreting meaning of texts
 
 
+## Meaning Cloud Api
 
-## Installation
-Make sure Node and npm are installed from the terminal.
-```
-node -v
-npm -v
-```
+Sentiment Analysis is MeaningCloud's solution for performing a detailed multilingual sentiment analysis of texts from different sources.
 
-1. Move to the project folder
-```
-cd <project directory>
-```
-2. Clone the repo
-```
-git clone <repo>
-```
-3. Install npm
+### Signup for an API key
+First, you will need to go [here](https://www.meaningcloud.com/developer/create-account). Signing up will get you an API key. You can take a look at [request](https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc/request).
+
+## Install and Run Project
+Install the SDK in your project and then we'll be ready to set up your server/index.js file.
+
+Your server index.js file must have these things:
+
 ```
 npm install
 ```
-4. Install loaders and plugins
+- Run in production mode
 ```
-# Choose the necessary installation for your development mode
-npm i -D @babel/core @babel/preset-env babel-loader
-npm i -D style-loader node-sass css-loader sass-loader
-npm i -D clean-webpack-plugin
-npm i -D html-webpack-plugin
-npm i -D mini-css-extract-plugin
-npm i -D optimize-css-assets-webpack-plugin terser-webpack-plugin
+npm run build-prod
 ```
-5. Sign up for an API key at [meaningcloud.com](https://www.meaningcloud.com/developer/create-account)
 
-6. Configure environment variables using dotenv package
-	1. Install the dotenv package
-	```
-	npm install dotenv
-	```
-	2. Create a new `.env` file in the root of your project
-	3. Fill the `.env` file with your API key like this:
-	```
-	API_KEY=**************************
-	```
-7. Start the project
-
-Command | Action
-:------------: | :-------------:
-`npm run build-prod` | Build project
-`npm start` | Run project
-
-8. Open browser at http://localhost:8081/
+Open browser at http://localhost:8081/
 
 ## Test
 Jest is a framework for testing JavaScript projects.  The Jest framework provides us the ability to create, and run unit tests. We wrote tests for desired functions defined in the src/client/js directory. The tests will check if the functions are behaving expectedly when provided an input.
